@@ -1,0 +1,90 @@
+* {
+  user-select: none;
+  outline: none;
+}
+
+*::-moz-focus-inner {
+  border: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cover {
+  margin: 60px 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cover-img img {
+  width: 200px;
+  border-radius: 1rem;
+}
+
+.cover-heading {
+  margin: 1rem 0 3rem;
+  text-align: center;
+}
+
+.cover-heading h1 {
+  margin: 0;
+  color: #333;
+  font-size: 3rem;
+}
+
+.cover-heading p {
+  margin: 0 0 0.2rem;
+}
+
+.cover-buttons a {
+  color: #333;
+  border: 1px solid #aaa;
+  border-radius: 0.3rem;
+  padding: 0.7rem 1.2rem;
+  background: none;
+  cursor: pointer;
+}
+
+.cover-buttons a:hover {
+  background-color: #eee;
+}
+
+.cover-buttons a:active {
+  background-color: #ddd;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+ul.social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.social-button {
+  margin: 0 0.5rem;
+  padding: 0.6rem;
+}
+
+.social-button:hover {
+  color: #009;
+}
+
+.social-button a {
+  color: inherit;
+}
