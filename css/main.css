@@ -26,12 +26,12 @@ a {
 }
 
 .cover-img img {
-  width: 200px;
+  width: 180px;
   border-radius: 1rem;
 }
 
 .cover-heading {
-  margin: 1rem 0 3rem;
+  margin: 1rem 0 0;
   text-align: center;
 }
 
@@ -43,6 +43,25 @@ a {
 
 .cover-heading p {
   margin: 0 0 0.2rem;
+  font-size: 0.8rem;
+}
+
+.cover-body {
+  text-align: center;
+  text-align: justify;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  max-width: 520px;
+}
+
+.cover-body p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  margin: 0 0 0.1rem;
+}
+
+.cover-buttons {
+  display: flex;
 }
 
 .cover-buttons a {
@@ -63,7 +82,8 @@ a {
 }
 
 footer {
-  position: absolute;
+  margin-top: 1rem;
+  position: fixed;
   bottom: 0;
   padding: 2rem;
   width: 100%;
@@ -71,6 +91,8 @@ footer {
 }
 
 ul.social {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -87,4 +109,11 @@ ul.social {
 
 .social-button a {
   color: inherit;
+}
+
+@media (max-width: 400px) {
+  footer {
+    padding: 0.5rem;
+    position: relative;
+  }
 }
