@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin Senoner - Gardena.net</title>
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400&display=swap');
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      background-image: url(/img/bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    li {
+      list-style: none;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      overflow: hidden;
+      padding: 0 30px;
+      background-color: #252526;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 20px #252526;
+    }
+    .heading {
+      width: 50%;
+      color: #ff6600;
+      font-size: 2.5rem;
+      font-weight: 300;
+      line-height: 4rem;
+      padding: 20px 0;
+      user-select: none;
+    }
+    nav {
+      display: flex;
+      width: 100vw;
+      align-items: center;
+      justify-content: right;
+    }
+    .nav-item {
+      border: 1px solid transparent;
+      padding: 0.5rem 0.8rem;
+      margin: 0 0.5rem;
+      border-radius: 3px;
+      text-transform: uppercase;
+      transition: border-color 0.2s ease-in-out;
+    }
+    .nav-item:hover {
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+    .nav-item.active {
+      border-color: #ff6600;
+    }
+    .nav-item.active:hover {
+      border-color: #ee4423;
+    }
+    .container {
+      margin: 12rem auto;
+      padding: 0 8rem;
+    }
+    .card {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 8px;
+    }
+    .card .profile {
+      text-align: center;
+    }
+    .card .profile img {
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+    }
+    .title {
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .content {
+      padding: 30px 80px;
+    }
+    .content h1 {
+      margin: 25px 0 0;
+    }
+    .content h3 {
+      margin: 15px 0 0;
+    }
+    .content ul {
+      margin-left: 20px;
+    }
+    .content ul li {
+      margin: 4px 0;
+    }
+    .content ul li span {
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media all and (max-width: 800px) {
+      header {
+        flex-direction: column;
+      }
+      nav {
+        justify-content: center;
+        padding-bottom: 10px;
+      }
+      .heading {
+        width: 100%;
+        text-align: center;
+      }
+      .nav-item {
+        margin: 0;
+        padding: 0.4rem 0.5rem;
+      }
+      .container {
+        padding: 0;
+      }
+      .content {
+        padding: 12px;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <div class="heading">Kevin Senoner</div>
+      <nav>
+        <a
+          target="blank"
+          href="https://www.linkedin.com/in/kevin-senoner-86630118a"
+          class="nav-item"
+          >LinkedIn</a
+        >
+        <a
+          target="blank"
+          href="https://twitter.com/SenonerKevin"
+          class="nav-item"
+          >Twitter</a
+        >
+        <a target="blank" href="https://github.com/SenonerK" class="nav-item"
+          >Github</a
+        >
+        <a
+          target="blank"
+          href="/Resume_KevinSenoner.pdf"
+          class="nav-item active"
+          >Résumé</a
+        >
+      </nav>
+    </header>
+    <div class="container">
+      <section class="card">
+        <div class="profile">
+          <img src="/img/profile.jpg" alt="Profile" />
+          <p class="title">Software Developer</p>
+          <p class="title">Linux user</p>
+        </div>
+        <div class="content">
+          <p>
+            Hi, I am a young software developer based in Selva Val Gardena,
+            Italy. I am flexible, and eager to work with a team of talented
+            developers. I have experience with JavaScript, Golang, C#, PHP, and
+            I am constantly learning new things. My other interests include ₿
+            cryptocurrencies (bitcoin), 💸 finance and 🚁 drone flying. I am
+            also passionate about Linux and Open Source software.
+          </p>
+          <h1>Technical Skills</h1>
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5<span> • 5 Years of Experience</span></li>
+            <li>CSS3<span> • 5 Years of Experience</span></li>
+            <li>JavaScript<span> • 4 Years of Experience</span></li>
+            <li>React<span> • 2 Years of Experience</span></li>
+            <li>Svelte<span> • 1 Year of Experience</span></li>
+          </ul>
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js<span> • 2 Years of Experience</span></li>
+            <li>Golang<span> • 1 Year of Experience</span></li>
+            <li>PHP<span> • 1 Year of Experience</span></li>
+            <li>Rust<span> • Getting started</span></li>
+          </ul>
+          <h1>Other</h1>
+          <ul>
+            <li>
+              Linux servers (web, file, application, ...)<span>
+                • 3 Years of Experience</span
+              >
+            </li>
+            <li>
+              Windows servers (AD, DNS, DHCP, ...)<span>
+                • 3 Years of Experience</span
+              >
+            </li>
+            <li>
+              Git<span>
+                • 4 Years of Experience (1 Year collaborating with others)</span
+              >
+            </li>
+            <li>Computer Networking<span> • 3 Years of Experience</span></li>
+            <li>Java/Kotlin (Android)<span> • 2 Years of Experience</span></li>
+            <li>Flutter (Dart)<span> • 1 Year of Experience</span></li>
+            <li>SQL<span> • 4 Years of Experience</span></li>
+            <li>MongoDB<span> • 2 Years of Experience</span></li>
+            <li>Docker<span> • 1 Year of Experience</span></li>
+            <li>CI/CD<span> • Github Workflow</span></li>
+            <li>TDD<span> • Getting started</span></li>
+            <li>ECDL (Office)<span> • 5 Years of Experience</span></li>
+          </ul>
+          <h1>Internships</h1>
+          <ul>
+            <li>
+              <b>Software Developer</b> at Demaclenko, Selva di Val GardenaJuly
+              <span>2018 – August 2018</span>
+              <ul>
+                <li>- Build native Android app to manage snow-guns</li>
+                <li>
+                  - Build web-service to release updates to customers and
+                  collect error reports.
+                </li>
+                <li>- Rewrite cross-compilation automation tool</li>
+              </ul>
+            </li>
+          </ul>
+          <h1>Education</h1>
+          <ul>
+            <li>LBS Tschuggmall (Brixen)<span> • 2015 - Present</span></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
