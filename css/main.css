@@ -12,6 +12,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Courier New", Courier, monospace;
+  background-color: rgb(24, 22, 22);
+  color: #fff;
 }
 
 a {
@@ -37,7 +39,6 @@ a {
 
 .cover-heading h1 {
   margin: 0;
-  color: #333;
   font-size: 3rem;
 }
 
@@ -65,16 +66,19 @@ a {
 }
 
 .cover-buttons a {
-  color: #333;
+  color: #fff;
   border: 1px solid #aaa;
   border-radius: 0.3rem;
   padding: 0.7rem 1.2rem;
   background: none;
   cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
 }
 
 .cover-buttons a:hover {
   background-color: #eee;
+  color: #000;
 }
 
 .cover-buttons a:active {
@@ -104,7 +108,7 @@ ul.social {
 }
 
 .social-button:hover {
-  color: #009;
+  color: red;
 }
 
 .social-button a {
